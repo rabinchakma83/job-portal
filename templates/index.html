@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="text-center">Hello, World!</h1>
+    <p>Welcome, {{ user.username }}!</p>
+    <p>Type: {{ user.user_type }}</p>
+    <p>Display Name: {{ user.display_name }}</p>
+    {% if profile %}
+        <p>Profile: {{ profile }}</p>
+    {% endif %}
+{% endblock %}
